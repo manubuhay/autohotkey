@@ -12,8 +12,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;Switching audio outputs taken from: https://theitbros.com/hotkey-to-switch-audio-devices/
-;WIN + E switch to Edifier H840 + FiiO K1 DAC
-#e::
+;WIN + Z switch to Edifier H840 + FiiO K1 DAC
+#z::
 Run, mmsys.cpl
 WinWait,Sound
 ControlSend,SysListView321,{Down 1}
@@ -21,8 +21,8 @@ ControlClick,&Set Default
 ControlClick,OK
 return
 
-;WIN + E switch to Fantech Hellscream GS201
-#f::
+;WIN + X switch to Fantech Hellscream GS201
+#x::
 Run, mmsys.cpl
 WinWait,Sound
 ControlSend,SysListView321,{Down 3}
