@@ -133,17 +133,17 @@ return
 Send {F9}
 return
 
-;--->"ALT + 10" to input F10
+;--->"ALT + 0" to input F10
 !0::
 Send {F10}
 return
 
-;--->"ALT + 11" to input F11
+;--->"ALT + -" to input F11
 !-::
 Send {F11}
 return
 
-;--->"ALT + 12" to input F12
+;--->"ALT + =" to input F12
 !=::
 Send {F12}
 return
