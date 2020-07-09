@@ -19,7 +19,7 @@ ControlClick,&Set Default
 ControlClick,OK
 return
 
-;--->"WIN + X" switch to PC Speaker
+;--->"WIN + X" switch to PC Speakers
 #x::
 Run, mmsys.cpl
 WinWait,Sound
@@ -28,12 +28,14 @@ ControlClick,&Set Default
 ControlClick,OK
 return
 
-;-------------------------------------------------------------
+-------------------------------------------------------------
+
 
 ;From: http://xahlee.info/mswin/autohotkey.html
 ;From: https://www.isunshare.com/windows-10/5-ways-to-open-snipping-tool-in-windows-10.html
 ;--->"ALT + X" to run Snipping Tool
 !x::Run snippingtool
+
 
 ;---------Custom Profile for Motospeed CK61------------------
 
@@ -68,13 +70,21 @@ return
 Send ?
 return
 
-;--->ALT + ARROW UP" to input forward slash, no need to toggle FN + 3 for "forward slash" mode
-!Up::
+;--->RSHIFT + ARROW UP" to input forward slash, no need to toggle FN + 3 for "forward slash" mode
+>+Up::
 Send /
 return
 
-;----->Function Keys Customization<-----
-; No need to toggle FN + 1 for "function key" mode
+;From: https://www.autohotkey.com/boards/viewtopic.php?t=5565
+;--->WIN + Q closes active window
+#q:: ;
+WinGetTitle, Title, A
+PostMessage, 0x112, 0xF060,,, %Title%
+return
+
+
+;------->Function Keys Customization<-------
+; No need to toggle FN + 1 for function key mode
 
 ;--->ALT + 1" to input F1
 !1::
@@ -92,6 +102,8 @@ Send {F3}
 return
 
 ;--->ALT + 4" to input F4
+; Instead of using ALT + F4 to close active window use WIN + Q(quit) instead, see above hotkey
+; Since "ALT + 4 = F4" you cannot input "ALT + F4"
 !4::
 Send {F4}
 return
@@ -137,5 +149,6 @@ Send {F12}
 return
 
 ;--->End of Function Keys Customization<---
+
 
 ;------------------------------------------------------------
