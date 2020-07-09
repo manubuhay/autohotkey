@@ -28,7 +28,7 @@ ControlClick,&Set Default
 ControlClick,OK
 return
 
--------------------------------------------------------------
+;-------------------------------------------------------------
 
 
 ;From: http://xahlee.info/mswin/autohotkey.html
