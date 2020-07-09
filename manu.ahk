@@ -28,7 +28,7 @@ ControlClick,&Set Default
 ControlClick,OK
 return
 
--------------------------------------------------------------
+;-------------------------------------------------------------
 
 ;From: http://xahlee.info/mswin/autohotkey.html
 ;From: https://www.isunshare.com/windows-10/5-ways-to-open-snipping-tool-in-windows-10.html
